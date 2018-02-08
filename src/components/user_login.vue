@@ -3,6 +3,6 @@
 */
 
 <template>
-  <div>这里什么没有333356666sadkfjgs</div>
+  <div>这里什么没有333356666sads</div>
 
 </template>
