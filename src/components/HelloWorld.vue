@@ -1,6 +1,8 @@
 <template>
   <div class="hello">
-    <h1>{{ msg }}</h1>
+    <span v-on:click="link_btn">点击这里跳转</span>
+
+    <h1 class="h1">{{ msg }}</h1>
     <h2>Essential Links</h2>
     <ul>
       <li>
@@ -84,14 +86,23 @@
 </template>
 
 <script>
-export default {
-  name: 'HelloWorld',
-  data () {
-    return {
-      msg: 'Welcome to Your Vue.js App'
+  export default {
+    name: 'HelloWorld',
+    data () {
+      return {
+        msg: 'Welcome to Your Vue.js App'
+      }
+    },
+    methods : {
+      link_btn: function(event){
+        $(".h1").click(function(){
+          console.log("444")
+        })
+//        window.open("www.baidu.com");
+      }
     }
   }
-}
+
 </script>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
